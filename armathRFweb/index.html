@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArmathRF - Անվտանգության Ստուգման Սարք</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="Armath-LogoENGPFP.png" alt="Armath Logo" class="logo-image">
+                <h2>ArmathRF</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link" data-en="Home" data-hy="Գլխավոր">Գլխավոր</a></li>
+                <li><a href="#about" class="nav-link" data-en="Project" data-hy="Նախագիծը">Նախագիծը</a></li>
+                <li><a href="#features" class="nav-link" data-en="Features" data-hy="Գործառույթներ">Գործառույթներ</a></li>
+                <li><a href="#tech" class="nav-link" data-en="Technical" data-hy="Տեխնիկական">Տեխնիկական</a></li>
+                <li><a href="#contact" class="nav-link" data-en="Contact" data-hy="Կապ">Կապ</a></li>
+            </ul>
+            <button class="lang-toggle" id="langToggle">EN</button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">ArmathRF</h1>
+            <p class="hero-subtitle" data-en="Wi-Fi and BLE device security testing tool" data-hy="Wi-Fi և BLE սարքերի անվտանգության ստուգման սարք">Wi-Fi և BLE սարքերի անվտանգության ստուգման սարք</p>
+            <p class="hero-description" data-en="Check your devices' protection against cyber attacks" data-hy="Ստուգեք ձեր սարքերի պաշտպանվածությունը կիբերհարձակումներից">Ստուգեք ձեր սարքերի պաշտպանվածությունը կիբերհարձակումներից</p>
+            <button class="btn btn-primary" data-en="Learn More" data-hy="Իմանալ Ավելին" onclick="document.querySelector('#about').scrollIntoView({behavior: 'smooth'})">Իմանալ Ավելին</button>
+        </div>
+        <div class="hero-image">
+            <div class="image-placeholder">
+                <svg width="400" height="400" viewBox="0 0 400 400">
+                    <circle cx="200" cy="200" r="150" fill="#667eea" opacity="0.2" class="pulse-circle"/>
+                    <circle cx="200" cy="200" r="100" fill="#764ba2" opacity="0.3" class="pulse-circle"/>
+                    <circle cx="200" cy="200" r="50" fill="#667eea" opacity="0.5" class="pulse-circle"/>
+                    <path d="M 200 150 L 220 180 L 190 180 Z" fill="white" opacity="0.8"/>
+                    <circle cx="200" cy="200" r="5" fill="white"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-en="About the Project" data-hy="Նախագծի Մասին">Նախագծի Մասին</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 data-en="What is ArmathRF?" data-hy="Ի՞նչ է ArmathRF-ը">Ի՞նչ է ArmathRF-ը</h3>
+                    <p data-en="ArmathRF is a device that can test whether other devices (Wi-Fi, BLE) are protected." data-hy="ArmathRF-ը սարք է, որով հնարավոր է ստուգել, արդյոք այլ սարքերը (Wi-Fi, BLE) պաշտպանված են։">ArmathRF-ը սարք է, որով հնարավոր է ստուգել, արդյոք այլ սարքերը (Wi-Fi, BLE) պաշտպանված են։</p>
+                    <p data-en="The device attempts to attack devices, and if the device cannot defend itself, it is considered vulnerable." data-hy="Սարքը փորձարկում է հարձակում իրականացնել սարքերի վրա, և եթե սարքը չի կարողանում պաշտպանվել հարձակումից, ապա այն համարվում է խոցելի։">Սարքը փորձարկում է հարձակում իրականացնել սարքերի վրա, և եթե սարքը չի կարողանում պաշտպանվել հարձակումից, ապա այն համարվում է խոցելի։</p>
+                    <p data-en="The device tries to disconnect the wifi network, and if the network does not disconnect, it is protected." data-hy="Սարքը փորձում է անջատել wifi ցանցը, և եթե ցանցը չի անջատվում ապա պաշտպանված է։">Սարքը փորձում է անջատել wifi ցանցը, և եթե ցանցը չի անջատվում ապա պաշտպանված է։</p>
+                    
+                    <h3 style="margin-top: 2rem;" data-en="Goals" data-hy="Նպատակներ">Նպատակներ</h3>
+                    <ul class="goals-list">
+                        <li data-en="Wi-Fi and BLE device security testing" data-hy="Wi-Fi և BLE սարքերի անվտանգության ստուգում">Wi-Fi և BLE սարքերի անվտանգության ստուգում</li>
+                        <li data-en="Cybersecurity educational goals" data-hy="Կիբերանվտանգության կրթական նպատակներ">Կիբերանվտանգության կրթական նպատակներ</li>
+                        <li data-en="Development of practical experience for students/participants" data-hy="Սովորողների/մասնակիցների պրակտիկ փորձի զարգացում">Սովորողների/մասնակիցների պրակտիկ փորձի զարգացում</li>
+                    </ul>
+                </div>
+                <div class="workflow-box">
+                    <h3 data-en="Workflow" data-hy="Աշխատանքի Ընթացք">Աշխատանքի Ընթացք</h3>
+                    <ol class="workflow-steps">
+                        <li data-en="Connect the device to power source" data-hy="Սարքը միացնել սնուցման աղբյուրին">Սարքը միացնել սնուցման աղբյուրին</li>
+                        <li data-en="Main menu appears on OLED screen" data-hy="OLED էկրանին երևում է գլխավոր մենյուն">OLED էկրանին երևում է գլխավոր մենյուն</li>
+                        <li data-en="User selects desired function with buttons" data-hy="Օգտատերը կոճակներով ընտրում է ցանկալի գործառույթը">Օգտատերը կոճակներով ընտրում է ցանկալի գործառույթը</li>
+                        <li data-en="Device performs scanning or attack" data-hy="Սարքը կատարում է սկանավորում կամ հարձակում">Սարքը կատարում է սկանավորում կամ հարձակում</li>
+                        <li data-en="Result is displayed on screen" data-hy="Արդյունքը ցուցադրվում է էկրանին">Արդյունքը ցուցադրվում է էկրանին</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="services">
+        <div class="container">
+            <h2 class="section-title" data-en="Features" data-hy="Գործառույթներ">Գործառույթներ</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12.55a11 11 0 0 1 14.08 0"/>
+                            <path d="M1.42 9a16 16 0 0 1 21.16 0"/>
+                            <path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
+                            <line x1="12" y1="20" x2="12.01" y2="20"/>
+                        </svg>
+                    </div>
+                    <h3 data-en="Wi-Fi Scanning" data-hy="Wi-Fi Սկանավորում">Wi-Fi Սկանավորում</h3>
+                    <p data-en="Wi-Fi network scanning, detection and vulnerability identification" data-hy="Wi-Fi ցանցերի սկանավորում, հայտնաբերում և թուլությունների հայտնաբերում">Wi-Fi ցանցերի սկանավորում, հայտնաբերում և թուլությունների հայտնաբերում</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6.5 6.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/>
+                            <path d="M17.5 6.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/>
+                            <path d="M6.5 17.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/>
+                            <path d="M17.5 17.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/>
+                        </svg>
+                    </div>
+                    <h3 data-en="BLE Detection" data-hy="BLE Հայտնաբերում">BLE Հայտնաբերում</h3>
+                    <p data-en="BLE device detection and analysis" data-hy="BLE սարքերի հայտնաբերում և վերլուծություն">BLE սարքերի հայտնաբերում և վերլուծություն</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 data-en="Fake AP" data-hy="Fake AP">Fake AP</h3>
+                    <p data-en="Creating fake access point (Fake AP)" data-hy="Կեղծ մուտքի կետ (Fake AP) ստեղծում">Կեղծ մուտքի կետ (Fake AP) ստեղծում</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 data-en="Deauth Attack" data-hy="Deauth Հարձակում">Deauth Հարձակում</h3>
+                    <p data-en="Deauthentication attack (DoS) testing" data-hy="Deauthentication հարձակում (DoS) փորձարկում">Deauthentication հարձակում (DoS) փորձարկում</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                        </svg>
+                    </div>
+                    <h3 data-en="Security Check" data-hy="Անվտանգության Ստուգում">Անվտանգության Ստուգում</h3>
+                    <p data-en="Display of protected/unprotected devices" data-hy="Պաշտպանված/անպաշտպան սարքերի ցուցադրում">Պաշտպանված/անպաշտպան սարքերի ցուցադրում</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Section -->
+    <section id="tech" class="tech-section">
+        <div class="container">
+            <h2 class="section-title" data-en="Technical Description" data-hy="Տեխնիկական Նկարագրություն">Տեխնիկական Նկարագրություն</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <h3 data-en="Hardware and Components" data-hy="Սարքավորում և Բաղադրիչներ">Սարքավորում և Բաղադրիչներ</h3>
+                    <ul>
+                        <li data-en="<strong>Main controller:</strong> Raspberry Pi Zero W" data-hy="<strong>Հիմնական վերահսկող սարք՝</strong> Raspberry Pi Zero W"><strong>Հիմնական վերահսկող սարք՝</strong> Raspberry Pi Zero W</li>
+                        <li><strong>OLED display:</strong> SSD1306 128x32</li>
+                        <li data-en="<strong>Buttons:</strong> 3 pcs" data-hy="<strong>Կոճակներ:</strong> 3 հատ"><strong>Կոճակներ:</strong> 3 հատ</li>
+                        <li><strong>Wi-Fi adapter</strong></li>
+                    </ul>
+                </div>
+                <div class="tech-card">
+                    <h3 data-en="Software" data-hy="Ծրագրային Ապահովում">Ծրագրային Ապահովում</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>C++</li>
+                    </ul>
+                    <h3 style="margin-top: 2rem;" data-en="Programmability" data-hy="Ծրագրավորելիություն">Ծրագրավորելիություն</h3>
+                    <ul>
+                        <li data-en="<strong>Fully Programmable:</strong> Device can be programmed to perform additional functions" data-hy="<strong>Լիովին Ծրագրավորելի:</strong> Սարքը կարող է ծրագրավորվել՝ կատարելու լրացուցիչ ֆունկցիաներ"><strong>Լիովին Ծրագրավորելի:</strong> Սարքը կարող է ծրագրավորվել՝ կատարելու լրացուցիչ ֆունկցիաներ</li>
+                        <li data-en="<strong>Expandable Functionality:</strong> New features and attack methods can be added" data-hy="<strong>Ընդլայնելի Ֆունկցիոնալություն:</strong> Կարող են ավելացվել նոր հնարավորություններ և հարձակման մեթոդներ"><strong>Ընդլայնելի Ֆունկցիոնալություն:</strong> Կարող են ավելացվել նոր հնարավորություններ և հարձակման մեթոդներ</li>
+                        <li data-en="<strong>Custom Scripts:</strong> Users can write and run custom security testing scripts" data-hy="<strong>Անհատական Սկրիպտներ:</strong> Օգտատերերը կարող են գրել և գործարկել անվտանգության ստուգման սեփական սկրիպտներ"><strong>Անհատական Սկրիպտներ:</strong> Օգտատերերը կարող են գրել և գործարկել անվտանգության ստուգման սեփական սկրիպտներ</li>
+                    </ul>
+                    <h3 style="margin-top: 2rem;" data-en="Next Steps" data-hy="Հաջորդ Քայլեր">Հաջորդ Քայլեր</h3>
+                    <ul>
+                        <li data-en="Final device design (case, power system)" data-hy="Սարքի վերջնական դիզայն (տուփ, սնուցման համակարգ)">Սարքի վերջնական դիզայն (տուփ, սնուցման համակարգ)</li>
+                        <li data-en="Adding new functionality (Bluetooth spoofing, MITM attacks)" data-hy="Նոր ֆունկցիոնալության ավելացում (Bluetooth spoofing, MITM attacks)">Նոր ֆունկցիոնալության ավելացում (Bluetooth spoofing, MITM attacks)</li>
+                        <li data-en="Better UI on screen" data-hy="Ավելի լավ UI էկրանին">Ավելի լավ UI էկրանին</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-en="Contact" data-hy="Կապ">Կապ</h2>
+            <div class="contact-content">
+                <div class="team-section">
+                    <h3 data-en="Project Authors" data-hy="Նախագծի Հեղինակներ">Նախագծի Հեղինակներ</h3>
+                    <div class="team-cards">
+                        <div class="team-card">
+                            <div class="team-icon">
+                                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="12" cy="7" r="4"/>
+                                </svg>
+                            </div>
+                            <h4 data-en="Narek Gevorgyan" data-hy="Նարեկ Գևորգյան">Նարեկ Գևորգյան</h4>
+                            <p data-en="Phone: +374 55 44 41 39" data-hy="Հեռ.՝ +374 55 44 41 39">Հեռ.՝ +374 55 44 41 39</p>
+                        </div>
+                        <div class="team-card">
+                            <div class="team-icon">
+                                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="12" cy="7" r="4"/>
+                                </svg>
+                            </div>
+                            <h4 data-en="Maria Vardanyan" data-hy="Մարիա Վարդանյան">Մարիա Վարդանյան</h4>
+                            <p data-en="Phone: +374 89 00 09 78" data-hy="Հեռ.՝ +374 89 00 09 78">Հեռ.՝ +374 89 00 09 78</p>
+                        </div>
+                    </div>
+                    <div style="margin-top: 2rem; text-align: center;">
+                        <p><strong data-en="Email:" data-hy="Էլ. փոստ՝">Էլ. փոստ՝</strong> <a href="mailto:armath.yerevan146@gmail.com">armath.yerevan146@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-en="&copy; 2025 ArmathRF. All rights reserved." data-hy="&copy; 2025 ArmathRF. Բոլոր իրավունքները պաշտպանված են։">&copy; 2025 ArmathRF. Բոլոր իրավունքները պաշտպանված են։</p>
+      
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
